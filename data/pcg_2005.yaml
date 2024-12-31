@@ -1,0 +1,1803 @@
+- id: 1
+  label: "Compte de capitaux"
+  parent: null
+  children:
+    - id: 10
+      label: "Capital, réserves et assimilés"
+      parent: 1
+      children:
+        - id: 101
+          label: Capital
+          parent: 10
+          children:
+            [
+              { id: 1011, label: "Capital souscrit - non appelé", parent: 101 },
+              {
+                id: 1012,
+                label: "Capital souscrit - appelé non versé",
+                parent: 101,
+              },
+              {
+                id: 1013,
+                label: "Capital souscrit - appelé versé",
+                parent: 101,
+              },
+            ]
+        - id: 104
+          label: "Primes liés au capital social"
+          parent: 10
+          children:
+            [
+              { id: 1041, label: "Primes d'émission", parent: 104 },
+              { id: 1042, label: "Primes de fusion", parent: 104 },
+              { id: 1043, label: "Primes d'apport", parent: 104 },
+              {
+                id: 1044,
+                label: "Primes de conversion d'obligation en actions",
+                parent: 104,
+              },
+            ]
+        - id: 105
+          label: "Ecart d'évaluation"
+          parent: 10
+          children:
+            [
+              { id: 1052, label: "Ecart de réévaluation libre", parent: 105 },
+              {
+                id: 1058,
+                label: "Autre Ecart de réévaluation à l'étranger",
+                parent: 105,
+              },
+            ]
+        - id: 106
+          label: Réserves
+          parent: 10
+          children:
+            [
+              { id: 1061, label: "Réserve légale", parent: 106 },
+              { id: 1062, label: "Réserve facultatives", parent: 106 },
+              {
+                id: 1063,
+                label: "Réserve statuaires ou contractuelles",
+                parent: 106,
+              },
+              { id: 1064, label: "Réserve réglementées", parent: 106 },
+              { id: 1068, label: "Autres réserves", parent: 106 },
+            ]
+        - id: 107
+          label: "Ecart d'équivalence"
+          parent: 10
+        - id: 108
+          label: "Compte d'éxploitant"
+          parent: 10
+        - id: 109
+          label: "Actionnaire, capitale souscrit non appelé"
+          parent: 10
+    - id: 11
+      label: "Report à nouveau"
+      parent: 1
+      children:
+        - id: 110
+          label: "Report à nouveau solde créditeur"
+          parent: 11
+        - id: 111
+          label: "Report à nouveau solde débiteur"
+          parent: 11
+    - id: 12
+      label: "Résultat de l'execrice"
+      parent: 1
+      children:
+        - id: 120
+          label: "Résultat de l'exercice (bénéfice)"
+          parent: 12
+        - id: 128
+          label: "Résultat en instance d'affectation"
+          parent: 12
+        - id: 129
+          label: "Résultat de l'exercice (perte)"
+          parent: 12
+    - id: 13
+      label: "Produits et charges différés - hors cycle d'exploitation"
+      parent: 1
+      children:
+        - id: 131
+          label: "Subventions d'équipement"
+          parent: 13
+          children:
+            [
+              { id: 1311, label: Etat, parent: 131 },
+              { id: 1312, label: Région, parent: 131 },
+              { id: 1313, label: Département, parent: 131 },
+              { id: 1314, label: Communes, parent: 131 },
+              { id: 1315, label: "Collectivités publiques", parent: 131 },
+              { id: 1316, label: "Entreprises publiques", parent: 131 },
+              {
+                id: 1317,
+                label: "Entreprises et organismes privés",
+                parent: 131,
+              },
+              { id: 1318, label: Autres, parent: 131 },
+            ]
+        - id: 132
+          label: "Autres subventions d'investissement"
+          parent: 13
+        - id: 133
+          label: "Impôts différés actifs"
+          parent: 13
+        - id: 134
+          label: "Impôts différés passifs"
+          parent: 13
+        - id: 138
+          label: "Autres produits et charges différés"
+          parent: 13
+    - id: 14
+      label: null
+      parent: 1
+    - id: 15
+      label: "Provisions pour charges - Passifs non courants"
+      parent: 1
+      children:
+        - id: 153
+          label: "Provisions pour pensions et obligations similaires"
+          parent: 15
+        - id: 155
+          label: "Provision pour impôts"
+          parent: 15
+        - id: 156
+          label: "Provision pour renouvellements des immobilisations (concession)"
+          parent: 15
+        - id: 158
+          label: "Autres provisions pour charges-passifs non courants"
+          parent: 15
+    - id: 16
+      label: "Emprunts et dettes assimilés"
+      parent: 1
+      children:
+        - id: 161
+          label: "Emprunts obligatoires conveertibles"
+          parent: 16
+        - id: 163
+          label: "Autres emprunts obligatoires"
+          parent: 16
+        - id: 164
+          label: "Emprunts auprès des établissements reçus"
+          parent: 16
+        - id: 167
+          label: "Dettes sur contrat de location - Financement"
+          parent: 16
+        - id: 168
+          label: "Autre emprunts et dettes assimilés"
+          parent: 16
+          children:
+            [
+              { id: 1681, label: "Autres emprunts", parent: 168 },
+              { id: 1688, label: "Intérêts courus", parent: 168 },
+            ]
+        - id: 169
+          label: "Primes de remboursements des obligations"
+          parent: 16
+    - id: 17
+      label: "Dettes rattachées à des participations"
+      parent: 1
+      children:
+        - id: 171
+          label: "Dettes rattachées à des participations groupe"
+          parent: 17
+        - id: 172
+          label: "Dettes rattachées à des participations hors groupe"
+          parent: 17
+        - id: 173
+          label: "Dettes rattachées à des sociétés en participation"
+          parent: 17
+        - id: 178
+          label: "Autres dettes rattachées à des participations"
+          parent: 17
+          children:
+            [
+              { id: 1781, label: Principal, parent: 178 },
+              { id: 1788, label: "Intérêts courus", parent: 178 },
+            ]
+    - id: 18
+      label: "Comptes de liaison des établissements etsociétés en participation"
+      parent: 1
+      children:
+        - id: 181
+          label: "Comptes de liaison entre établissements"
+          parent: 18
+        - id: 188
+          label: "Comptes de liaison entre sociétés en participation"
+          parent: 18
+    - id: 19
+      label: null
+      parent: 1
+- id: 2
+  label: "Comptes d'immobilisations"
+  parent: null
+  children:
+    - id: 20
+      label: "Immobilisations incorporelles"
+      parent: 2
+      children:
+        - id: 203
+          label: "Frais de développement immobilisables"
+          parent: 20
+        - id: 204
+          label: "Logiciels informatiques et assimilés"
+          parent: 20
+        - id: 205
+          label: "Concenssions et droits similaires, brevets, licences, marques"
+          parent: 20
+        - id: 207
+          label: "Fonds commercial"
+          parent: 20
+        - id: 208
+          label: "Autres immobilisations incorporelles"
+          parent: 20
+    - id: 21
+      label: "Immobilisations corporelles"
+      parent: 2
+      children:
+        - id: 211
+          label: Terrains
+          parent: 21
+        - id: 212
+          label: "Agencements et aménagements de terrain"
+          parent: 21
+        - id: 213
+          label: Constructions
+          parent: 21
+          children:
+            [
+              { id: 2131, label: Bâtiments, parent: 213 },
+              {
+                id: 2135,
+                label: "Installations générales agencements aménagements",
+                parent: 213,
+              },
+            ]
+        - id: 215
+          label: "Installations techniques"
+          parent: 21
+          children:
+            [
+              {
+                id: 2151,
+                label: "Installations complexes spécialisées",
+                parent: 215,
+              },
+              { id: 2154, label: "Matériel industriel", parent: 215 },
+              { id: 2155, label: "Outillage industriel", parent: 215 },
+              {
+                id: 2157,
+                label: "Agencement et aménagement du matériel et outillage industriel",
+                parent: 215,
+              },
+            ]
+        - id: 218
+          label: "Autres immobilisations corporelles"
+          parent: 21
+          children:
+            [
+              {
+                id: 2181,
+                label: "Installations générales, agencements, aménagements",
+                parent: 218,
+              },
+              { id: 2182, label: "Matériel de transport", parent: 218 },
+              {
+                id: 2183,
+                label: "Matériel de bureau et matériel informatique",
+                parent: 218,
+              },
+              { id: 2184, label: Mobilier, parent: 218 },
+              { id: 2185, label: Cheptel, parent: 218 },
+              { id: 2186, label: "Matériel d'emballage", parent: 218 },
+            ]
+    - id: 22
+      label: "Immobilisations mise en concessions"
+      parent: 2
+      children:
+        - id: 221
+          label: "Terrains en concession"
+          parent: 22
+        - id: 222
+          label: "Agencement et aménagemens de terrain en concession"
+          parent: 22
+        - id: 223
+          label: "Contruction en concession"
+          parent: 22
+        - id: 225
+          label: "Installation techniques en concession"
+          parent: 22
+        - id: 228
+          label: "Autres immobilisations corporelles en concession"
+          parent: 22
+        - id: 229
+          label: "Droits du concédant"
+          parent: 22
+    - id: 23
+      label: "Immobilisations en cours"
+      parent: 2
+      children:
+        - id: 232
+          label: "Immobilisations corporelles en cours"
+          parent: 23
+        - id: 237
+          label: "Immobilisations incorporelles en cours"
+          parent: 23
+        - id: 238
+          label: "Avances et acomptes versés sur commandes d'immobilisations"
+          parent: 23
+    - id: 24
+      label: null
+      parent: 2
+    - id: 25
+      label: null
+      parent: 2
+    - id: 26
+      label: "Participations et créances rattachés à des participations"
+      parent: 2
+      children:
+        - id: 261
+          label: "Titres de participation"
+          parent: 26
+          children:
+            [
+              { id: 2611, label: Actions, parent: 261 },
+              { id: 2612, label: "Autres titres", parent: 261 },
+              { id: 2618, label: "Intérêts courus", parent: 261 },
+            ]
+        - id: 262
+          label: "Autres formes de participations"
+          parent: 26
+        - id: 265
+          label: "Titres de participation évalués par équivalence"
+          parent: 26
+        - id: 266
+          label: "Créances rattachées à des participations groupe"
+          parent: 26
+        - id: 267
+          label: "Créances rattachées à des participations hors groupe"
+          parent: 26
+          children:
+            [
+              {
+                id: 2671,
+                label: "Créances rattachées à des participations (groupe)",
+                parent: 267,
+              },
+              {
+                id: 2674,
+                label: "Créances rattachées à des participations (hors groupe)",
+                parent: 267,
+              },
+            ]
+        - id: 268
+          label: "Créances rattachées à des sociétés en participation"
+          parent: 26
+        - id: 269
+          label: "Versement restant à effectuer sur titres de participation non libérés"
+          parent: 26
+    - id: 27
+      label: "Autres immobilisations financières"
+      parent: 2
+      children:
+        - id: 271
+          label: "Titres immobilisés autres que les titres immobilisés de l'activité de portefeuille"
+          parent: 27
+          children:
+            [
+              { id: 2711, label: Actions, parent: 271 },
+              { id: 2712, label: "Autres titres", parent: 271 },
+            ]
+        - id: 272
+          label: "Titres représentatifs de droit de créance (obligations, bons)"
+          parent: 27
+        - id: 273
+          label: "Titres immobilisées de l'activité de protefeuille"
+          parent: 27
+        - id: 274
+          label: Prêts
+          parent: 27
+          children:
+            [
+              { id: 2741, label: "Prêts participatifs", parent: 274 },
+              { id: 2742, label: "Prêts aux associés", parent: 274 },
+              { id: 2743, label: "Prêts au personnel", parent: 274 },
+              { id: 2748, label: "Autres prêts", parent: 274 },
+            ]
+        - id: 275
+          label: "Dépôts et cautionnements versés"
+          parent: 27
+          children: [{ id: 2751, label: Dépôts, parent: 275 }]
+        - id: 276
+          label: "Autres créances immobilisées"
+          parent: 27
+        - id: 277
+          label: "Actions propres (ou parts propres)"
+          parent: 27
+        - id: 279
+          label: "Versement restant à effectuer sur titres immobilisés non libérés"
+          parent: 27
+    - id: 28
+      label: "Amortissements des immobilisations"
+      parent: 2
+      children:
+        - id: 280
+          label: "Amortissements des immobilisations incorporelles"
+          parent: 28
+          children:
+            [
+              {
+                id: 2803,
+                label: "Frais de développement immobilisables",
+                parent: 280,
+              },
+              {
+                id: 2804,
+                label: "Logiciels informatiques et assimilés",
+                parent: 280,
+              },
+              {
+                id: 2805,
+                label: "Concessions et droits similaires, brevets, licenses, marques",
+                parent: 280,
+              },
+              { id: 2807, label: "Fonds commercial", parent: 280 },
+              {
+                id: 2808,
+                label: "Autres immobilisations incorporelles",
+                parent: 280,
+              },
+            ]
+        - id: 281
+          label: "Amortissements des immobilisations corporelles"
+          parent: 28
+          children:
+            [
+              { id: 2811, label: Terrains, parent: 281 },
+              {
+                id: 2812,
+                label: "Agencements et aménagements de terrain",
+                parent: 281,
+              },
+              {
+                id: 2813,
+                label: Constructions,
+                parent: 281,
+                children:
+                  [
+                    { id: 28131, label: Bâtiments, parent: 2813 },
+                    {
+                      id: 28135,
+                      label: "Installations générales, agencements, aménagements",
+                      parent: 2813,
+                    },
+                  ],
+              },
+              {
+                id: 2815,
+                label: "Installations techniques",
+                parent: 281,
+                children:
+                  [
+                    {
+                      id: 28151,
+                      label: "Installations Complexes Specialisées",
+                      parent: 2815,
+                    },
+                    { id: 28154, label: "Matériel industriel", parent: 2815 },
+                    { id: 28155, label: "Outillage industriel", parent: 2815 },
+                    {
+                      id: 28157,
+                      label: "Agencements et aménagements du matériel et outillage industriel",
+                      parent: 2815,
+                    },
+                  ],
+              },
+              {
+                id: 2818,
+                label: "Autres immobilisations corporelles",
+                parent: 281,
+                children:
+                  [
+                    {
+                      id: 28181,
+                      label: "Installations générales, agencements, aménagements",
+                      parent: 2818,
+                    },
+                    { id: 28182, label: "Matériel de transport", parent: 2818 },
+                    {
+                      id: 28183,
+                      label: "Matériel de bureau et matériel informatique",
+                      parent: 2818,
+                    },
+                    { id: 28184, label: Mobilier, parent: 2818 },
+                    { id: 28185, label: Cheptel, parent: 2818 },
+                    {
+                      id: 28186,
+                      label: "Emballages récupérables",
+                      parent: 2818,
+                    },
+                  ],
+              },
+            ]
+        - id: 282
+          label: "Amortissements des immobilisations mises en concession"
+          parent: 28
+    - id: 29
+      label: "Pertes de valeur sur immobilisations"
+      parent: 2
+      children:
+        - id: 290
+          label: "Pertes de valeur sur immobilisations incorporelles"
+          parent: 29
+        - id: 291
+          label: "Pertes de valeur sur immobilisations corporelles"
+          parent: 29
+        - id: 292
+          label: "Dépréciations sur immobilisations mises en concession"
+          parent: 29
+        - id: 293
+          label: "Pertes de valeur sur immobilisations en cours"
+          parent: 29
+        - id: 296
+          label: "Pertes de valeur sur participations et créances rattachées à participations"
+          parent: 29
+        - id: 297
+          label: "Pertes de valeur sur autres immobilisations financières"
+          parent: 29
+- id: 3
+  label: "Comptes de stocks et d'en-cours"
+  parent: null
+  children:
+    - id: 31
+      label: "Matières premières et fournitures"
+      parent: 3
+    - id: 32
+      label: "Autres approvisionnements"
+      parent: 3
+      children:
+        - id: 321
+          label: "Matières consommables"
+          parent: 32
+        - id: 322
+          label: "Fournitures consommables"
+          parent: 32
+          children:
+            [
+              { id: 3221, label: Combustibles, parent: 322 },
+              { id: 3222, label: "Produits d'entretiens", parent: 322 },
+              {
+                id: 3223,
+                label: "Fournitures d'atelier et d'usine",
+                parent: 322,
+              },
+              { id: 3224, label: "Fournitures de magasin", parent: 322 },
+              { id: 3225, label: "Fournitures de bureau", parent: 322 },
+            ]
+        - id: 326
+          label: Emballages
+          parent: 32
+          children:
+            [
+              { id: 3261, label: "Emballages perdus", parent: 326 },
+              { id: 3265, label: "Emballages récupérables", parent: 326 },
+            ]
+    - id: 33
+      label: "En cours de productions de biens"
+      parent: 3
+      children:
+        - id: 331
+          label: "Produits en cours"
+          parent: 33
+        - id: 335
+          label: "Travaux en cours"
+          parent: 33
+    - id: 34
+      label: "En cours de productions de services"
+      parent: 3
+      children:
+        - id: 341
+          label: "Etudes en cours"
+          parent: 34
+        - id: 345
+          label: "Prestations de services en cours"
+          parent: 34
+    - id: 35
+      label: "Stocks de produits"
+      parent: 3
+      children:
+        - id: 351
+          label: "Produits intermédiaires"
+          parent: 35
+        - id: 355
+          label: "Produits finis"
+          parent: 35
+        - id: 358
+          label: "Produits résiduels ou matières de récupération (déchets, rebuts)"
+          parent: 35
+          children:
+            [
+              { id: 3581, label: Déchets, parent: 358 },
+              { id: 3585, label: Rebuts, parent: 358 },
+              { id: 3586, label: "Matières de récupération", parent: 358 },
+            ]
+    - id: 36
+      label: null
+      parent: 3
+    - id: 37
+      label: "Stocks de marchandises"
+      parent: 3
+    - id: 38
+      label: "Stocks à l'exterieur (en cours de route, en dépôt ou en consignation)"
+      parent: 3
+    - id: 39
+      label: "Pertes de valeur sur stocks et en cours"
+      parent: 3
+      children:
+        - id: 391
+          label: "Pertes de valeur matières premières et fournitures"
+          parent: 39
+        - id: 392
+          label: "Pertes de valeur autres approvisionnements"
+          parent: 39
+          children:
+            [
+              { id: 3921, label: "Matières cosommables", parent: 392 },
+              {
+                id: 3922,
+                label: "Fournitures consommables",
+                parent: 392,
+                children:
+                  [
+                    { id: 39221, label: Combustibles, parent: 3922 },
+                    { id: 39222, label: "Produits d'entretien", parent: 3922 },
+                    {
+                      id: 39223,
+                      label: "Fournitures d'atelier et d'usines",
+                      parent: 3922,
+                    },
+                    {
+                      id: 39224,
+                      label: "Fournitures de magasin",
+                      parent: 3922,
+                    },
+                    { id: 39225, label: "Fournitures de bureau", parent: 3922 },
+                  ],
+              },
+            ]
+        - id: 393
+          label: "Pertes de valeur en cours de production de biens"
+          parent: 39
+        - id: 394
+          label: "Pertes de valeur en cours de production de services"
+          parent: 39
+        - id: 395
+          label: "Pertes de valeur de stocks de produits"
+          parent: 39
+        - id: 397
+          label: "Pertes de valeur de stocks de marchandises"
+          parent: 39
+        - id: 398
+          label: "Pertes de valeur stocks à l'exterieur"
+          parent: 39
+- id: 4
+  label: "Comptes de tiers"
+  parent: null
+  children:
+    - id: 40
+      label: "Fournisseurs et comptes rattachés"
+      parent: 4
+      children:
+        - id: 401
+          label: "Fournisseurs de biens et services"
+          parent: 40
+          children:
+            [
+              { id: 4011, label: Malagasy, parent: 401 },
+              { id: 4012, label: Etrangers, parent: 401 },
+            ]
+        - id: 403
+          label: "Fournisseurs effets à payer"
+          parent: 40
+        - id: 404
+          label: "Fournisseurs d'immobilisations"
+          parent: 40
+        - id: 405
+          label: "Fournisseurs d'immobilisations effets à payer"
+          parent: 40
+        - id: 408
+          label: "Fournisseurs factures non parvenues"
+          parent: 40
+          children:
+            [{ id: 4088, label: "Fournisseurs intérêt courus", parent: 408 }]
+        - id: 409
+          label: "Fournisseurs débiteurs: avances et acomptes RRR à obtenir, autres créances"
+          parent: 40
+          children:
+            [
+              {
+                id: 4091,
+                label: "Fournisseurs Avances et acomptes versés sur commandes",
+                parent: 409,
+              },
+              {
+                id: 4096,
+                label: "Fournisseurs Créances pour emballage et matériel à rendre",
+                parent: 409,
+              },
+              { id: 4097, label: "Fournisseurs Autres avoirs", parent: 409 },
+              {
+                id: 4098,
+                label: "Rabais, remises, ristournes à obtenir et autres avoirs non encore reçus",
+                parent: 409,
+              },
+            ]
+    - id: 41
+      label: "Clients et comptes rattachés"
+      parent: 4
+      children:
+        - id: 411
+          label: Clients
+          parent: 41
+          children:
+            [
+              { id: 4111, label: Malagasy, parent: 411 },
+              { id: 4112, label: Etrangers, parent: 411 },
+            ]
+        - id: 413
+          label: "Clients effets à recevoir"
+          parent: 41
+        - id: 414
+          label: "Effets à l'encaissement"
+          parent: 41
+        - id: 415
+          label: "Effets remis à l'escompte"
+          parent: 41
+        - id: 416
+          label: "Clients douteux"
+          parent: 41
+        - id: 417
+          label: "Créances sur travaux non encore facturables"
+          parent: 41
+        - id: 418
+          label: "Clients - produits non facturés"
+          parent: 41
+          children:
+            [
+              { id: 4181, label: "Clients factures à établir", parent: 418 },
+              { id: 4182, label: "Clients intérêts courus", parent: 418 },
+            ]
+        - id: 419
+          label: "Clients créditeurs"
+          parent: 41
+          children:
+            [
+              {
+                id: 4191,
+                label: "Clients et avances sur commandes",
+                parent: 419,
+              },
+              {
+                id: 4196,
+                label: "Clients dettes sur emballages et matériels consignés",
+                parent: 419,
+              },
+              { id: 4197, label: "Clients autres avoirs", parent: 419 },
+              {
+                id: 4198,
+                label: "Rabais, remises, ristournes à accorder et autres avoirs à établir",
+                parent: 419,
+              },
+            ]
+    - id: 42
+      label: "Personnels et comptes rattachés"
+      parent: 4
+      children:
+        - id: 421
+          label: "Personnels, rémunérations dues"
+          parent: 42
+        - id: 422
+          label: "Fonds sociaux - oeuvres sociales"
+          parent: 42
+        - id: 425
+          label: "Personnel, avances et acomptes accordés"
+          parent: 42
+        - id: 426
+          label: "Personnel, dépôt reçus"
+          parent: 42
+        - id: 427
+          label: "Personnel, oppositions"
+          parent: 42
+        - id: 428
+          label: "Personnel, charges à payer et produit à recevoir"
+          parent: 42
+          children:
+            [
+              { id: 4286, label: "Charges à payer", parent: 428 },
+              { id: 4287, label: "Produits à recevoirs", parent: 428 },
+            ]
+    - id: 43
+      label: "Organismes sociaux et compte rattachés"
+      parent: 4
+      children:
+        - id: 431
+          label: "Organismes sociaux A"
+          parent: 43
+        - id: 432
+          label: "Organismes sociaux B"
+          parent: 43
+        - id: 438
+          label: "Organismes sociaux charges à payer"
+          parent: 43
+          children:
+            [
+              {
+                id: 4382,
+                label: "Charges sociales sur congés à payer",
+                parent: 438,
+              },
+              { id: 4386, label: "Charges sociales à payer", parent: 438 },
+              { id: 4387, label: "Produits à recevoir", parent: 438 },
+            ]
+    - id: 44
+      label: "Etat, collectivités publiques, organismes internationaux"
+      parent: 4
+      children:
+        - id: 441
+          label: "Etat, subventions à recevoir"
+          parent: 44
+          children:
+            [
+              { id: 4411, label: "Subventions d'investissement", parent: 441 },
+              { id: 4417, label: "Subventions d'exploitation", parent: 441 },
+            ]
+        - id: 442
+          label: "Etat, impôts et taxess recouvrables sur des tiers"
+          parent: 44
+        - id: 443
+          label: "Opérations particulières avec l'Etat et autres organismes publics"
+          parent: 44
+        - id: 444
+          label: "Etat, impôts sur les résultats"
+          parent: 44
+        - id: 445
+          label: "Etat, taxes sur les chiffres d'affaires"
+          parent: 44
+          children:
+            [
+              { id: 4454, label: "Crédit de taxes", parent: 445 },
+              {
+                id: 4455,
+                label: "Taxes sur le chiffre d'affaires à décaisser",
+                parent: 445,
+              },
+              {
+                id: 4456,
+                label: "Taxes sur le chiffre d'affaires déductibles",
+                parent: 445,
+              },
+              {
+                id: 4457,
+                label: "Taxes sur le chiffre d'affaire collectées ou en attente",
+                parent: 445,
+              },
+            ]
+        - id: 447
+          label: "Autres impôts, taxes et versements assimilés"
+          parent: 44
+        - id: 448
+          label: "Etat, charges à payer et produits à recevoir"
+          parent: 44
+          children:
+            [
+              { id: 4486, label: "Charges à payer", parent: 448 },
+              { id: 4487, label: "Produits à recevoir", parent: 448 },
+            ]
+    - id: 45
+      label: "Groupes et assoicués"
+      parent: 4
+      children:
+        - id: 451
+          label: "Opération groupe"
+          parent: 45
+        - id: 455
+          label: "Associés, comptes courants"
+          parent: 45
+          children:
+            [
+              { id: 4551, label: Principal, parent: 455 },
+              { id: 4558, label: "Intérêts courus", parent: 455 },
+            ]
+        - id: 456
+          label: "Assoiés, opérations sur capital"
+          parent: 45
+          children:
+            [
+              {
+                id: 4561,
+                label: "Associés compte d'apport en société",
+                parent: 456,
+                children:
+                  [
+                    { id: 45611, label: "Apport en nature", parent: 4561 },
+                    { id: 45615, label: "Apport en numéraire", parent: 4561 },
+                  ],
+              },
+              {
+                id: 4562,
+                label: "Apport Capital appelé, non versé",
+                parent: 456,
+                children:
+                  [
+                    {
+                      id: 45621,
+                      label: "Actionnaires Capital souscrit et appelé, non versé",
+                      parent: 4562,
+                    },
+                    {
+                      id: 45625,
+                      label: "Actionnaires Capital appelé, non versé",
+                      parent: 4562,
+                    },
+                  ],
+              },
+              {
+                id: 4563,
+                label: "Associés versement reçus sur augmentation de capital",
+                parent: 456,
+              },
+              { id: 4564, label: "Associés Versements anticipés", parent: 456 },
+              { id: 4566, label: "Actionnaires défaillants", parent: 456 },
+              { id: 4567, label: "Associés Capital à rembourser", parent: 456 },
+            ]
+        - id: 457
+          label: "Associés, dividendes à payer"
+          parent: 45
+        - id: 458
+          label: "Assoicés, opérations faites en commun ou en groupement"
+          parent: 45
+          children:
+            [
+              { id: 4587, label: "Opérations courantes", parent: 458 },
+              { id: 4588, label: "Intérêts courus", parent: 458 },
+            ]
+    - id: 46
+      label: "Débiteurs divers et créditeurs divers"
+      parent: 4
+      children:
+        - id: 462
+          label: "Créances sur cessions d'immobilisations"
+          parent: 46
+        - id: 464
+          label: "Dettes sur acquisitions de valeurs mobilières de placement"
+          parent: 46
+        - id: 465
+          label: "Créances sur cessions de valeurs mobilières de placement"
+          parent: 46
+        - id: 467
+          label: "Autres comptes débiteurs ou créditeurs"
+          parent: 46
+        - id: 468
+          label: "Divers charges à payer ou produits à recevoir"
+          parent: 46
+          children:
+            [
+              { id: 4686, label: "Charges à payer", parent: 468 },
+              { id: 4687, label: "Produits à recevoir", parent: 468 },
+            ]
+    - id: 47
+      label: "Comptes transitoires ou d'attente"
+      parent: 4
+    - id: 48
+      label: "Charges ou produits constatés d'avance et provisions"
+      parent: 4
+      children:
+        - id: 481
+          label: "Provisions - Passifs courants"
+          parent: 48
+        - id: 486
+          label: "Charges constatées d'avance"
+          parent: 48
+        - id: 487
+          label: "Produits constatés d'avance"
+          parent: 48
+    - id: 49
+      label: "Pertes de valeur sur compte de tiers"
+      parent: 4
+      children:
+        - id: 491
+          label: "Pertes de valeur sur comptes de clients"
+          parent: 49
+        - id: 495
+          label: "Pertes de valeur sur comptes du groupe et des associés"
+          parent: 49
+        - id: 496
+          label: "Pertes de valeur sur comptes de débiteurs divers"
+          parent: 49
+- id: 5
+  label: "Comptes financiers"
+  parent: null
+  children:
+    - id: 50
+      label: "Valeurs mobilières de placement"
+      parent: 5
+      children:
+        - id: 501
+          label: "Parts dans les entreprises liées"
+          parent: 50
+        - id: 502
+          label: "Prêts à court terme"
+          parent: 50
+        - id: 503
+          label: Actions
+          parent: 50
+        - id: 504
+          label: "Autres titres conférant un droit de propriété"
+          parent: 50
+        - id: 505
+          label: "Obligations et bons de caisse à court terme"
+          parent: 50
+        - id: 508
+          label: "Autres valeurs mobilières de placement et crénaces assimilés"
+          parent: 50
+          children:
+            [
+              {
+                id: 5088,
+                label: "Intérêts courus sur obligations, bons et valeurs assimilés",
+                parent: 508,
+              },
+            ]
+        - id: 509
+          label: "Versements restant àeffectuer sur MVP non libérées"
+          parent: 50
+    - id: 51
+      label: "Banque, établissements financièrs et assimilés"
+      parent: 5
+      children:
+        - id: 511
+          label: "Valeurs à l'encaissement"
+          parent: 51
+          children: [{ id: 5112, label: "Chèques à encaisser", parent: 511 }]
+        - id: 512
+          label: "Banques comptes courants"
+          parent: 51
+          children:
+            [
+              { id: 5121, label: "Compte en monnaie nationale", parent: 512 },
+              { id: 5124, label: "Compte en devise", parent: 512 },
+            ]
+        - id: 515
+          label: "Caisse du Trésor public et établissements publics"
+          parent: 51
+        - id: 516
+          label: "Emprunts à court terme"
+          parent: 51
+        - id: 517
+          label: "Autres organismes financiers"
+          parent: 51
+          children: [{ id: 5171, label: "Centre Chèques Postaux", parent: 517 }]
+        - id: 518
+          label: "Intérêts courus"
+          parent: 51
+          children:
+            [
+              { id: 5181, label: "Intérêts courus à payer", parent: 518 },
+              { id: 5188, label: "Intérêts courus à recevoir", parent: 518 },
+            ]
+        - id: 519
+          label: "Concours bancaires courants"
+          parent: 51
+          children: [{ id: 5198, label: "Intérêts courus", parent: 519 }]
+    - id: 52
+      label: "Instruments de trésorerie"
+      parent: 5
+    - id: 53
+      label: Caisse
+      parent: 5
+    - id: 54
+      label: "Régies d'avance et accréditifs"
+      parent: 5
+    - id: 55
+      label: null
+      parent: 5
+    - id: 56
+      label: null
+      parent: 5
+    - id: 57
+      label: null
+      parent: 5
+    - id: 58
+      label: "Virements internes"
+      parent: 5
+      children:
+        - id: 581
+          label: "Virements de fonds"
+          parent: 58
+        - id: 588
+          label: "Autres virements internes"
+          parent: 58
+    - id: 59
+      label: "Pertes de valeur sur comptes financiers"
+      parent: 5
+      children:
+        - id: 591
+          label: "Pertes de valeur sur valeurs en banque et établissements financiers"
+          parent: 59
+        - id: 594
+          label: "Pertes de valeur sur régies d'avance et accréditifs"
+          parent: 59
+- id: 6
+  label: "Comptes de charges"
+  parent: null
+  children:
+    - id: 60
+      label: "Achats consommés"
+      parent: 6
+      children:
+        - id: 601
+          label: "Matières premières"
+          parent: 60
+        - id: 602
+          label: "Autres approvisionnements"
+          parent: 60
+          children:
+            [
+              { id: 6021, label: "Matières consommables", parent: 602 },
+              { id: 6022, label: "Fournitures consommables", parent: 602 },
+              {
+                id: 6026,
+                label: Emballages,
+                parent: 602,
+                children:
+                  [
+                    { id: 60261, label: "Emballages perdus", parent: 6026 },
+                    {
+                      id: 60265,
+                      label: "Emballages récupérables",
+                      parent: 6026,
+                    },
+                  ],
+              },
+            ]
+        - id: 603
+          label: "Variations de stocks"
+          parent: 60
+          children:
+            [
+              {
+                id: 6031,
+                label: "Variations des stocks de matières premières et fournitures",
+                parent: 603,
+              },
+              {
+                id: 6032,
+                label: "Variations des stocks des autres approvisionnements",
+                parent: 603,
+              },
+              {
+                id: 6037,
+                label: "Variations des stocks de marchandises",
+                parent: 603,
+              },
+            ]
+        - id: 604
+          label: "Achats d'études et de prestations de services"
+          parent: 60
+        - id: 605
+          label: "Achats de matériels, équipement et travaux"
+          parent: 60
+        - id: 606
+          label: "Achats non stockées de matières et fournitures"
+          parent: 60
+          children:
+            [
+              { id: 6061, label: "Eau et éléctricité", parent: 606 },
+              { id: 6062, label: "Carburants et lubrifiants", parent: 606 },
+              {
+                id: 6063,
+                label: "Fournitures d'entretien et de petit équipement",
+                parent: 606,
+              },
+              { id: 6064, label: "Fournitures administratifs", parent: 606 },
+              {
+                id: 6068,
+                label: "Autres matières et fournitures",
+                parent: 606,
+              },
+            ]
+        - id: 607
+          label: "Achats de marchandises"
+          parent: 60
+        - id: 608
+          label: "Frais accessoires d'achat"
+          parent: 60
+        - id: 609
+          label: "Rabais, remises, ristournes obtenus sur achats"
+          parent: 60
+          children:
+            [
+              {
+                id: 6091,
+                label: "Matères premières et fournitures",
+                parent: 609,
+              },
+              {
+                id: 6092,
+                label: "Autres approvisionnements stockées",
+                parent: 609,
+              },
+              {
+                id: 6094,
+                label: "Etudes et prestations de services",
+                parent: 609,
+              },
+              {
+                id: 6095,
+                label: "Matériels, équipements et travaux",
+                parent: 609,
+              },
+              { id: 6096, label: "Approvisionnements stockés", parent: 609 },
+              { id: 6097, label: Marchandises, parent: 609 },
+            ]
+    - id: 61
+      label: "Services extérieurs"
+      parent: 6
+      children:
+        - id: 611
+          label: "Sous-traitance générale"
+          parent: 61
+        - id: 612
+          label: null
+          parent: 61
+        - id: 613
+          label: Locations
+          parent: 61
+          children:
+            [
+              { id: 6132, label: "Locations immobilières", parent: 613 },
+              { id: 6135, label: "Locations mobilières", parent: 613 },
+              { id: 6136, label: "Malis sur emballages", parent: 613 },
+            ]
+        - id: 614
+          label: "Charges locatives et charges de copropriété"
+          parent: 61
+        - id: 615
+          label: "Entretien, réparations et maintenances"
+          parent: 61
+        - id: 616
+          label: "Primes d'assurances"
+          parent: 61
+        - id: 617
+          label: "Etudes et recherches"
+          parent: 61
+        - id: 618
+          label: "Documents et divers"
+          parent: 61
+          children:
+            [
+              { id: 6181, label: "Documentation générale", parent: 618 },
+              { id: 6182, label: "Documentation technique", parent: 618 },
+              {
+                id: 6183,
+                label: "Frais de colloques, séminaires, conférences",
+                parent: 618,
+              },
+            ]
+        - id: 619
+          label: "Rabais, remises, ristournes obtenus sur services extérieurs"
+          parent: 61
+    - id: 62
+      label: "Autres services extérieurs"
+      parent: 6
+      children:
+        - id: 621
+          label: "Personnel exterieur à l'entreprise"
+          parent: 62
+        - id: 622
+          label: "Rémunérations d'intermédiaires et honoraires"
+          parent: 62
+          children:
+            [
+              {
+                id: 6221,
+                label: "Commissions et courtages sur achats",
+                parent: 622,
+              },
+              {
+                id: 6222,
+                label: "Commissions et courtages sur ventes",
+                parent: 622,
+              },
+              {
+                id: 6224,
+                label: "Rémunérations des transitaires",
+                parent: 622,
+              },
+              { id: 6225, label: "Rémunérations d'affacturages", parent: 622 },
+              { id: 6226, label: Honoraires, parent: 622 },
+              {
+                id: 6227,
+                label: "Frais d'actes et de contentieux",
+                parent: 622,
+              },
+              { id: 6228, label: Divers, parent: 622 },
+            ]
+        - id: 623
+          label: "Publicité, publication, relations publiques"
+          parent: 62
+          children:
+            [
+              { id: 6231, label: "Annonces et insértions", parent: 623 },
+              { id: 6232, label: Echantillons, parent: 623 },
+              { id: 6233, label: "Foires et expositions", parent: 623 },
+              { id: 6234, label: "Cadeaux à la clientèle", parent: 623 },
+              { id: 6235, label: Primes, parent: 623 },
+              { id: 6236, label: "Catalogues et imprimés", parent: 623 },
+              { id: 6237, label: Publications, parent: 623 },
+              { id: 6238, label: Divers, parent: 623 },
+            ]
+        - id: 624
+          label: "Transports de biens et transports collectifs du personnel"
+          parent: 62
+          children:
+            [
+              { id: 6241, label: "Transports sur achats", parent: 624 },
+              { id: 6242, label: "Transports sur ventes", parent: 624 },
+              {
+                id: 6243,
+                label: "Transports entre établissements ou chantiers",
+                parent: 624,
+              },
+              { id: 6244, label: "Transports administratifs", parent: 624 },
+              {
+                id: 6247,
+                label: "Transports collectifs du personnel",
+                parent: 624,
+              },
+              { id: 6248, label: Divers, parent: 624 },
+            ]
+        - id: 625
+          label: "Déplacements, missions et réceptions"
+          parent: 62
+          children:
+            [
+              { id: 6251, label: "Voyages et déplacements", parent: 625 },
+              { id: 6255, label: "Frais de déménagements", parent: 625 },
+              { id: 6256, label: Missions, parent: 625 },
+              { id: 6257, label: Réceptions, parent: 625 },
+            ]
+        - id: 626
+          label: "Frais postaux et télécommunications"
+          parent: 62
+          children:
+            [
+              { id: 6261, label: Affranchissement, parent: 626 },
+              {
+                id: 6262,
+                label: "Redevances téléphoniques et télégrammes",
+                parent: 626,
+              },
+            ]
+        - id: 627
+          label: "Services bancaires et assimilés"
+          parent: 62
+          children:
+            [
+              { id: 6271, label: "Frais sur titres", parent: 627 },
+              {
+                id: 6272,
+                label: "Commissions et frais sur émission d'emprunt",
+                parent: 627,
+              },
+              { id: 6275, label: "Frais sur effets", parent: 627 },
+              { id: 6276, label: "Location de coffres", parent: 627 },
+              {
+                id: 6278,
+                label: "Autres frais et commissions sur prestations de services",
+                parent: 627,
+              },
+            ]
+        - id: 628
+          label: "Cotisations et divers"
+          parent: 62
+        - id: 629
+          label: "Rabais, remises, ristournes obtenus sur autres services extérieurs"
+          parent: 62
+    - id: 63
+      label: "Impôts, taxes et versements assimilés"
+      parent: 6
+      children:
+        - id: 631
+          label: "Impôts, taxes et versements assimilés sur rémunérations"
+          parent: 63
+        - id: 635
+          label: "Autres impôts et taxes"
+          parent: 63
+    - id: 64
+      label: "Charges de personnel"
+      parent: 6
+      children:
+        - id: 641
+          label: "Rémunérations du personnel"
+          parent: 64
+          children:
+            [
+              { id: 6411, label: "Salaires, appointements", parent: 641 },
+              { id: 6412, label: "Congés payés", parent: 641 },
+              { id: 6413, label: "Primes et gratifications", parent: 641 },
+              {
+                id: 6414,
+                label: "Indemnités et avantages divers",
+                parent: 641,
+              },
+              { id: 6415, label: "Supplément familial", parent: 641 },
+            ]
+        - id: 644
+          label: "Rémunérations des dirigeants"
+          parent: 64
+        - id: 645
+          label: "Cotisations aux organismes sociaux"
+          parent: 64
+        - id: 646
+          label: "Charges sociales sur rémunérations des dirigeants"
+          parent: 64
+        - id: 647
+          label: "Autres charges sociales"
+          parent: 64
+        - id: 648
+          label: "Autres charges de personnel"
+          parent: 64
+    - id: 65
+      label: "Autres charges des activités ordinaires"
+      parent: 6
+      children:
+        - id: 651
+          label: "Redevances pour concessions, brevets, licences, logiciels et valeurs similaires"
+          parent: 65
+        - id: 652
+          label: "Moins-values sur cessions d'actifs non courants"
+          parent: 65
+        - id: 653
+          label: "Jetons de présence"
+          parent: 65
+        - id: 654
+          label: "Pertes sur créances irrécouvrables"
+          parent: 65
+        - id: 655
+          label: "Quote-part de résultat sur opérations faites en commun"
+          parent: 65
+        - id: 656
+          label: "Amendes et pénalités, subventions accordées, dons et libéralités"
+          parent: 65
+        - id: 657
+          label: "Charges exceptionnelles de gestion courante"
+          parent: 65
+        - id: 658
+          label: "Autres charges de gestion courante"
+          parent: 65
+    - id: 66
+      label: "Charges financières"
+      parent: 6
+      children:
+        - id: 661
+          label: "Charges d'intérêts"
+          parent: 66
+          children:
+            [
+              {
+                id: 6611,
+                label: "Intérêts des emprunts et dettes",
+                parent: 661,
+              },
+              {
+                id: 6615,
+                label: "Intérêts des comptes courants et des dépôts créditeurs",
+                parent: 661,
+              },
+              {
+                id: 6616,
+                label: "Intérêts bancaires et sur opérations de financement",
+                parent: 661,
+              },
+              { id: 6618, label: "Intérêts des autres dettes", parent: 661 },
+            ]
+        - id: 664
+          label: "Pertes sur créances liées à des participations"
+          parent: 66
+        - id: 665
+          label: "Moins-values sur titres de placement"
+          parent: 66
+        - id: 666
+          label: "Pertes de change"
+          parent: 66
+        - id: 667
+          label: "Moins-values sur instruments financiers et assimilés"
+          parent: 66
+        - id: 668
+          label: "Autres charges financières"
+          parent: 66
+    - id: 67
+      label: "Eléments extraordinaires (charges)"
+      parent: 6
+    - id: 68
+      label: "Dotations aux amortissements, provisions, pertes de valeur"
+      parent: 6
+      children:
+        - id: 681
+          label: "Dotations - actifs non courants"
+          parent: 68
+          children:
+            [
+              {
+                id: 6811,
+                label: "Dotations aux amortissements sur immobilisations incorporelles et corporelles",
+                parent: 681,
+              },
+              {
+                id: 6815,
+                label: "Dotations aux provisions et charges",
+                parent: 681,
+              },
+              {
+                id: 6816,
+                label: "Dotations aux pertes de valeur des immobilisations incorporelles et corporelles",
+                parent: 681,
+              },
+            ]
+        - id: 685
+          label: "Dotations - actifs courants"
+          parent: 68
+    - id: 69
+      label: "Impôts sur les bénéfices"
+      parent: 6
+      children:
+        - id: 692
+          label: "Imposition différée actif"
+          parent: 69
+        - id: 693
+          label: "Imposition différée passif"
+          parent: 69
+        - id: 695
+          label: "Impôts sur les bénéfices basés sur le résultat des activités ordinaires"
+          parent: 69
+        - id: 698
+          label: "Autres impôts sur les résulats"
+          parent: 69
+- id: 7
+  label: "Comptes de produits"
+  parent: null
+  children:
+    - id: 70
+      label: "Ventes des produits fabriqués, marchandises, prestations"
+      parent: 7
+      children:
+        - id: 701
+          label: "Ventes de produits finis"
+          parent: 70
+        - id: 702
+          label: "Ventes de produits intermédiaires"
+          parent: 70
+        - id: 703
+          label: "Ventes de produits résiduels"
+          parent: 70
+        - id: 704
+          label: "Ventes de travaux"
+          parent: 70
+        - id: 705
+          label: "Ventes d'études"
+          parent: 70
+        - id: 706
+          label: "Ventes de prestations de services"
+          parent: 70
+        - id: 707
+          label: "Ventes de marchandises"
+          parent: 70
+        - id: 708
+          label: "Produits des activités annexes"
+          parent: 70
+          children:
+            [
+              { id: 7082, label: "Commissions et courtages", parent: 708 },
+              { id: 7083, label: "Locations diverses", parent: 708 },
+              {
+                id: 7084,
+                label: "Frais et accessoires refacturés",
+                parent: 708,
+              },
+              {
+                id: 7086,
+                label: "Boni sur reprises d'emballages consignés",
+                parent: 708,
+              },
+              {
+                id: 7088,
+                label: "Autres produits des activités annexes",
+                parent: 708,
+              },
+            ]
+        - id: 709
+          label: "Rabais, remises et ristournes accordés"
+          parent: 70
+          children:
+            [
+              { id: 7091, label: "Ventes de produits finis", parent: 709 },
+              {
+                id: 7092,
+                label: "Ventes de produits intérmédiaires",
+                parent: 709,
+              },
+              { id: 7094, label: Travaux, parent: 709 },
+              { id: 7095, label: Etudes, parent: 709 },
+              { id: 7096, label: "Prestations de services", parent: 709 },
+              { id: 7097, label: "Ventes de marchandises", parent: 709 },
+              {
+                id: 7098,
+                label: "Produits des activités annexes",
+                parent: 709,
+              },
+            ]
+    - id: 71
+      label: "Production stockées (ou déstockage)"
+      parent: 7
+      children:
+        - id: 713
+          label: "Variations de stocks d'en-cours"
+          parent: 71
+          children:
+            [
+              {
+                id: 7133,
+                label: "Variations des en-cours de productions des biens",
+                parent: 713,
+              },
+              {
+                id: 7135,
+                label: "Variations des stocks de produits",
+                parent: 713,
+              },
+            ]
+        - id: 714
+          label: "Variations des stocks de produits"
+          parent: 71
+    - id: 72
+      label: "Production immobilisée"
+      parent: 7
+      children:
+        - id: 721
+          label: "Production immobilisée d'actif incorporel"
+          parent: 72
+        - id: 722
+          label: "Production immobilisée d'actif corporel"
+          parent: 72
+    - id: 74
+      label: "Subventions d'exploitation"
+      parent: 7
+      children:
+        - id: 741
+          label: "Subventions d'équilibre"
+          parent: 74
+        - id: 748
+          label: "Autres subventions d'exploitation"
+          parent: 74
+    - id: 75
+      label: "Autres produits opérationnels"
+      parent: 7
+      children:
+        - id: 751
+          label: "Redevances pour concessions, brevets, licences, logiciels et valeurs"
+          parent: 75
+        - id: 752
+          label: "Plus-values sur cessions d'actifs non courants"
+          parent: 75
+        - id: 753
+          label: "Jetons de présence et rémunérations d'administrateurs ou de gérant"
+          parent: 75
+        - id: 754
+          label: "Quote-part de subventions d'investissement virées au résultat de l'exercice"
+          parent: 75
+        - id: 755
+          label: "Quote-part de résultat sur opérations faites en commun"
+          parent: 75
+        - id: 756
+          label: "Libéralités perçues, rentrées sur créances amorties"
+          parent: 75
+        - id: 757
+          label: "Produits exceptionnels sur opérations de gestion"
+          parent: 75
+        - id: 758
+          label: "Autres produits de gestion courant"
+          parent: 75
+    - id: 76
+      label: "Produits financiers"
+      parent: 7
+      children:
+        - id: 761
+          label: "Produits de participations"
+          parent: 76
+          children:
+            [
+              {
+                id: 7611,
+                label: "Revenus des titres de participation",
+                parent: 761,
+              },
+              {
+                id: 7616,
+                label: "Revenus sur les autres formes de participations",
+                parent: 761,
+              },
+              {
+                id: 7617,
+                label: "Revenus des créances rattachées à des participations",
+                parent: 761,
+              },
+            ]
+        - id: 762
+          label: "Produits des autres immobilisations financières"
+          parent: 76
+          children:
+            [
+              {
+                id: 7621,
+                label: "Revenus des titres immobilisés",
+                parent: 762,
+              },
+              { id: 7626, label: "Revenus des prêts", parent: 762 },
+              {
+                id: 7627,
+                label: "Revenus des créances immobilisées",
+                parent: 762,
+              },
+            ]
+        - id: 763
+          label: "Revenus des autres créances"
+          parent: 76
+        - id: 764
+          label: "Revenus et plus-values des valeurs mobilières de placement"
+          parent: 76
+        - id: 766
+          label: "Gains de change"
+          parent: 76
+        - id: 767
+          label: "Produits net sur cessions de valeurs mobilières de placement"
+          parent: 76
+        - id: 768
+          label: "Autres produits financiers"
+          parent: 76
+    - id: 77
+      label: "Eléments extraordinaires (produits)"
+      parent: 7
+    - id: 78
+      label: "Reprise sur porvisions et pertes de valeur"
+      parent: 7
+      children:
+        - id: 781
+          label: "Reprises d'exploitation - actifs non courants"
+          parent: 78
+          children:
+            [
+              {
+                id: 7811,
+                label: "Reprises sur amortissements des immobilisations",
+                parent: 781,
+              },
+              {
+                id: 7845,
+                label: "Reprises sur provisions pour charges",
+                parent: 781,
+              },
+              {
+                id: 7846,
+                label: "Reprises sur pertes de valeur des immobilisations incorporelles et corporelles",
+                parent: 781,
+              },
+            ]
+        - id: 785
+          label: "Reprises d'exploitation - actifs courants"
+          parent: 78
+        - id: 786
+          label: "Reprises financières"
+          parent: 78
